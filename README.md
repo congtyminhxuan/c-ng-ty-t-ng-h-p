@@ -1,1 +1,0 @@
-# c-ng-ty-t-ng-h-p

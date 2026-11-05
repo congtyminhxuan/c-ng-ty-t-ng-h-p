@@ -1,0 +1,383 @@
+# c-ng-ty-t-ng-h-p
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÔNG TY TỔNG HỢP MINH XUÂN - Đại Lý Phân Phối VIFON</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .bg-vifon-red {
+            background-color: #E31837;
+        }
+        .text-vifon-red {
+            color: #E31837;
+        }
+        .border-vifon-red {
+            border-color: #E31837;
+        }
+        .bg-vifon-yellow {
+            background-color: #FFF200;
+        }
+        .pulse-phone {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(227, 24, 55, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(227, 24, 55, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(227, 24, 55, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 pb-24 md:pb-12">
+
+    <!-- HEADER / BANNER TOP -->
+    <header class="bg-vifon-red text-white shadow-lg sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white p-2 rounded-full shadow">
+                    <i class="fa-solid font-bold text-2xl text-vifon-red">VIFON</i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-lg md:text-xl tracking-tight leading-tight uppercase">Công ty Tổng hợp Minh Xuân</h1>
+                    <p class="text-xs text-yellow-200 font-medium">Đại lý phân phối sản phẩm VIFON chính hãng</p>
+                </div>
+            </div>
+            
+            <div class="mt-2 md:mt-0 flex items-center space-x-2 bg-red-800 bg-opacity-50 px-3 py-1.5 rounded-full border border-red-400">
+                <i class="fa-solid fa-user-check text-yellow-300"></i>
+                <div class="text-xs md:text-sm">
+                    <span class="text-gray-200">NVBH:</span> <strong class="text-yellow-300 font-bold">Phương VIFON</strong>
+                    <a href="tel:0352104222" class="ml-2 font-black text-white hover:underline underline-offset-2">
+                        <i class="fa-solid fa-phone text-xs"></i> 0352104222
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-gradient-to-r from-red-600 to-orange-500 text-white py-8 px-4 shadow-inner">
+        <div class="max-w-6xl mx-auto text-center">
+            <span class="bg-yellow-400 text-red-900 font-bold text-xs uppercase px-3 py-1 rounded-full inline-block mb-2 shadow">Ưu đãi giao hàng nhanh</span>
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-2">ĐẶT HÀNG TRỰC TUYẾN - GIAO HÀNG TẬN NƠI</h2>
+            <p class="text-sm md:text-base max-w-2xl mx-auto text-red-100">Cung cấp các dòng sản phẩm phở, bánh đa, mì ly VIFON thơm ngon, chất lượng chuẩn thương hiệu Việt. Cam kết chính hãng 100%!</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- SAN PHAM SECTION -->
+        <div class="mb-12">
+            <div class="flex items-center space-x-2 border-b-2 border-vifon-red pb-2 mb-6">
+                <i class="fa-solid fa-boxes-packing text-2xl text-vifon-red"></i>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 uppercase">Danh Sách Sản Phẩm Nổi Bật</h3>
+            </div>
+
+            <!-- Grid Sản Phẩm -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="products-list">
+                
+                <!-- Sản phẩm 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="relative bg-gray-100 h-48 overflow-hidden flex items-center justify-center p-2">
+                            <img src="https://www.kytuoi.com/wp-content/uploads/2019/11/th%C3%B9ng-Ph%E1%BB%9F-b%C3%B2-Vifon-g%C3%B3i-65g-x30-g%C3%B3i-1.jpg" 
+                                 alt="Phở Bò 65gr Vifon" 
+                                 class="object-contain h-full w-full hover:scale-105 transition-transform duration-300"
+                                 onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Pho+Bo+Vifon'">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Thùng 30 gói</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-800 text-base mb-1 hover:text-vifon-red transition-colors">Phở Bò 65gr Vifon</h4>
+                            <p class="text-xs text-gray-500 mb-2">Hương vị phở bò truyền thống đậm đà, sợi phở dai ngon.</p>
+                            <div class="text-lg font-black text-vifon-red">200.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <button onclick="selectProduct(1, 'Phở Bò 65gr Vifon', 200000)" class="w-full bg-vifon-red hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 transition-colors shadow-md">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Chọn mua</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="relative bg-gray-100 h-48 overflow-hidden flex items-center justify-center p-2">
+                            <img src="https://cdn.go-vietnam.vn/sale-products/00042213-1.png?v=9" 
+                                 alt="Phở Gà 65gr Vifon" 
+                                 class="object-contain h-full w-full hover:scale-105 transition-transform duration-300"
+                                 onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Pho+Ga+Vifon'">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Thùng 30 gói</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-800 text-base mb-1 hover:text-vifon-red transition-colors">Phở Gà 65gr Vifon</h4>
+                            <p class="text-xs text-gray-500 mb-2">Nước dùng gà thanh ngọt, thơm lừng chuẩn vị gia đình.</p>
+                            <div class="text-lg font-black text-vifon-red">200.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <button onclick="selectProduct(2, 'Phở Gà 65gr Vifon', 200000)" class="w-full bg-vifon-red hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 transition-colors shadow-md">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Chọn mua</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="relative bg-gray-100 h-48 overflow-hidden flex items-center justify-center p-2">
+                            <img src="https://cdn.hstatic.net/products/200001145721/th_ng_b_nh_da_cua_60gr_1076324f85d34824bd247d4e535b4777_large.png" 
+                                 alt="Bánh Đa Cua 65gr Vifon" 
+                                 class="object-contain h-full w-full hover:scale-105 transition-transform duration-300"
+                                 onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Banh+Da+Cua+Vifon'">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Đặc sản Hải Phòng</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-800 text-base mb-1 hover:text-vifon-red transition-colors">Bánh Đa Cua 65gr Vifon</h4>
+                            <p class="text-xs text-gray-500 mb-2">Đặc sản bánh đa cua Hải Phòng thơm ngon đậm vị cua đồng.</p>
+                            <div class="text-lg font-black text-vifon-red">200.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <button onclick="selectProduct(3, 'Bánh Đa Cua 65gr Vifon', 200000)" class="w-full bg-vifon-red hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 transition-colors shadow-md">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Chọn mua</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="relative bg-gray-100 h-48 overflow-hidden flex items-center justify-center p-2">
+                            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-824j4-mpx8jiy8d2wx83" 
+                                 alt="Mì ly lẩu thái tôm 60gr Vifon" 
+                                 class="object-contain h-full w-full hover:scale-105 transition-transform duration-300"
+                                 onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Mi+Ly+Lau+Thai+Vifon'">
+                            <span class="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">Thùng 24 Ly</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-800 text-base mb-1 hover:text-vifon-red transition-colors">Mì Ly Lẩu Thái Tôm 60gr Vifon</h4>
+                            <p class="text-xs text-gray-500 mb-2">Vị chua cay bùng nổ, tiện lợi sử dụng mọi lúc mọi nơi.</p>
+                            <div class="text-lg font-black text-vifon-red">240.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <button onclick="selectProduct(4, 'Mì ly lẩu thái tôm 60gr Vifon', 240000)" class="w-full bg-vifon-red hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 transition-colors shadow-md">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Chọn mua</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FORM ĐẶT HÀNG SECTION -->
+        <div id="order-section" class="bg-white rounded-2xl shadow-xl border border-red-100 overflow-hidden max-w-3xl mx-auto">
+            <div class="bg-vifon-red text-white p-4 md:p-6 text-center">
+                <h3 class="text-xl md:text-2xl font-black uppercase tracking-wide">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> Form Đặt Hàng Trực Tuyến
+                </h3>
+                <p class="text-xs md:text-sm text-red-100 mt-1">Vui lòng điền chính xác thông tin để Phương VIFON gửi hàng sớm nhất cho bạn</p>
+            </div>
+
+            <form action="https://formspree.io/f/xpppkjbb" method="POST" class="p-4 md:p-8 space-y-6" id="orderForm">
+                
+                <!-- Bảng chọn sản phẩm & số lượng -->
+                <div class="bg-red-50 p-4 rounded-xl border border-red-200">
+                    <label class="block text-gray-800 font-bold mb-3 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-cart-shopping text-vifon-red mr-2"></i> Chọn sản phẩm & số lượng:
+                    </label>
+
+                    <div class="space-y-3">
+                        <!-- Sp 1 -->
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg border border-gray-200">
+                            <div class="text-xs md:text-sm font-medium text-gray-800 pr-2">
+                                1. Phở Bò 65gr Vifon <span class="text-red-600 font-bold">(200k)</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500">SL:</span>
+                                <input type="number" min="0" value="0" name="So_Luong_Pho_Bo" id="qty_1" onchange="calculateTotal()" oninput="calculateTotal()" class="w-16 border rounded p-1 text-center font-bold text-gray-700 focus:ring-2 focus:ring-red-500">
+                            </div>
+                        </div>
+
+                        <!-- Sp 2 -->
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg border border-gray-200">
+                            <div class="text-xs md:text-sm font-medium text-gray-800 pr-2">
+                                2. Phở Gà 65gr Vifon <span class="text-red-600 font-bold">(200k)</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500">SL:</span>
+                                <input type="number" min="0" value="0" name="So_Luong_Pho_Ga" id="qty_2" onchange="calculateTotal()" oninput="calculateTotal()" class="w-16 border rounded p-1 text-center font-bold text-gray-700 focus:ring-2 focus:ring-red-500">
+                            </div>
+                        </div>
+
+                        <!-- Sp 3 -->
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg border border-gray-200">
+                            <div class="text-xs md:text-sm font-medium text-gray-800 pr-2">
+                                3. Bánh Đa Cua 65gr Vifon <span class="text-red-600 font-bold">(200k)</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500">SL:</span>
+                                <input type="number" min="0" value="0" name="So_Luong_Banh_Da_Cua" id="qty_3" onchange="calculateTotal()" oninput="calculateTotal()" class="w-16 border rounded p-1 text-center font-bold text-gray-700 focus:ring-2 focus:ring-red-500">
+                            </div>
+                        </div>
+
+                        <!-- Sp 4 -->
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg border border-gray-200">
+                            <div class="text-xs md:text-sm font-medium text-gray-800 pr-2">
+                                4. Mì ly lẩu thái tôm 60gr Vifon <span class="text-red-600 font-bold">(240k)</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500">SL:</span>
+                                <input type="number" min="0" value="0" name="So_Luong_Mi_Ly" id="qty_4" onchange="calculateTotal()" oninput="calculateTotal()" class="w-16 border rounded p-1 text-center font-bold text-gray-700 focus:ring-2 focus:ring-red-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hiển thị Tổng Tiền -->
+                    <div class="mt-4 pt-3 border-t border-red-200 flex justify-between items-center">
+                        <span class="font-bold text-gray-700 text-base">Tổng giá trị đơn hàng:</span>
+                        <span id="total-price-display" class="text-2xl font-black text-vifon-red">0 VNĐ</span>
+                        <!-- Hidden input gửi sang Formspree -->
+                        <input type="hidden" name="Tong_Tien" id="hidden_total_price" value="0 VNĐ">
+                    </div>
+                </div>
+
+                <!-- Thông tin người nhận -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-gray-800 text-sm uppercase border-b pb-1">Thông tin người nhận hàng</h4>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Họ và tên *</label>
+                            <input type="text" name="Ho_Ten" required placeholder="Nguyễn Văn A" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-red-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Số điện thoại *</label>
+                            <input type="tel" name="So_Dien_Thoai" required placeholder="0352104222" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-red-500 outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Tỉnh / Thành phố *</label>
+                            <input type="text" name="Tinh_ThanhPho" required placeholder="Ví dụ: Hà Nội, Quảng Ninh, TP.HCM..." class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-red-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Quận / Huyện / Phường / Xã *</label>
+                            <input type="text" name="QuanHuyen_PhuongXa" required placeholder="Ví dụ: Quận Cầu Giấy, Phường Dịch Vọng..." class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-red-500 outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Tên đường / Tòa nhà / Số nhà *</label>
+                        <input type="text" name="Dia_Chi_Chi_Tiet" required placeholder="Ví dụ: Số 123 đường Nguyễn Phong Sắc" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-red-500 outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Ghi chú bổ sung (nếu có)</label>
+                        <textarea name="Ghi_Chu" rows="2" placeholder="Giao giờ hành chính, gọi trước khi giao..." class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-red-500 outline-none"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-vifon-red hover:bg-red-700 text-white font-black text-lg py-3 px-6 rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>XÁC NHẬN ĐẶT HÀNG NGAY</span>
+                </button>
+
+                <p class="text-xs text-center text-gray-500">Sau khi bấm gửi, thông tin đơn hàng sẽ được gửi trực tiếp đến bộ phận bán hàng Công ty Minh Xuân.</p>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-300 py-6 px-4 mt-12 text-center text-sm">
+        <div class="max-w-6xl mx-auto space-y-2">
+            <p class="font-bold text-white uppercase">CÔNG TY TỔNG HỢP MINH XUÂN</p>
+            <p>Nhân viên hỗ trợ kinh doanh: <strong>Phương VIFON</strong> - Điện thoại/Zalo: <strong>0352104222</strong></p>
+            <p class="text-xs text-gray-500">&copy; 2026 Minh Xuan Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- THANH LIÊN HỆ CỐ ĐỊNH PHÍA DƯỚI -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 shadow-2xl flex items-center justify-around z-50 md:hidden">
+        <a href="tel:0352104222" class="flex-1 mr-2 bg-red-600 hover:bg-red-700 text-white text-center py-2.5 rounded-lg font-bold text-sm flex items-center justify-center space-x-1 pulse-phone">
+            <i class="fa-solid fa-phone"></i>
+            <span>Gọi 0352104222</span>
+        </a>
+        <a href="https://zalo.me/0352104222" target="_blank" class="flex-1 ml-2 bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-bold text-sm flex items-center justify-center space-x-1">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span>Chat Zalo</span>
+        </a>
+    </div>
+
+    <!-- Nút Floating Zalo Desktop -->
+    <div class="hidden md:block fixed bottom-6 right-6 z-50 space-y-3">
+        <a href="https://zalo.me/0352104222" target="_blank" class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-3 rounded-full shadow-2xl hover:bg-blue-700 transition-all font-bold">
+            <i class="fa-solid fa-comment-dots text-xl"></i>
+            <span>Zalo: 0352104222</span>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT XỬ LÝ -->
+    <script>
+        // Chọn nhanh sản phẩm từ danh sách
+        function selectProduct(id, name, price) {
+            const qtyInput = document.getElementById(`qty_${id}`);
+            qtyInput.value = parseInt(qtyInput.value) + 1;
+            calculateTotal();
+            
+            // Cuộn xuống form đặt hàng
+            document.getElementById('order-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Tính tổng tiền tự động
+        function calculateTotal() {
+            const price1 = 200000;
+            const price2 = 200000;
+            const price3 = 200000;
+            const price4 = 240000;
+
+            const q1 = parseInt(document.getElementById('qty_1').value) || 0;
+            const q2 = parseInt(document.getElementById('qty_2').value) || 0;
+            const q3 = parseInt(document.getElementById('qty_3').value) || 0;
+            const q4 = parseInt(document.getElementById('qty_4').value) || 0;
+
+            const total = (q1 * price1) + (q2 * price2) + (q3 * price3) + (q4 * price4);
+
+            const formattedTotal = total.toLocaleString('vi-VN') + ' VNĐ';
+            document.getElementById('total-price-display').innerText = formattedTotal;
+            document.getElementById('hidden_total_price').value = formattedTotal;
+        }
+
+        // Kiểm tra trước khi gửi form
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            const q1 = parseInt(document.getElementById('qty_1').value) || 0;
+            const q2 = parseInt(document.getElementById('qty_2').value) || 0;
+            const q3 = parseInt(document.getElementById('qty_3').value) || 0;
+            const q4 = parseInt(document.getElementById('qty_4').value) || 0;
+
+            if (q1 + q2 + q3 + q4 === 0) {
+                e.preventDefault();
+                alert('Vui lòng chọn số lượng ít nhất 1 sản phẩm trước khi đặt hàng!');
+                document.getElementById('order-section').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
